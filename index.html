@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-6">
+            <div class="wrapper text-center">
+                <h1>Quản Lý tuyển sinh</h1>
+                <div class="content">
+                    <div class="row">
+                        <div class="form-group col-4">
+                            <input type="number" name="" id="diemChuan" class="form-control" placeholder="Điểm chuẩn">
+                        </div>
+                        <div class="form-group col-4">
+                            <select id="khuVuc">
+                                <option value="0">Chọn khu vực</option>
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-4">
+                            <select id="doiTuong">
+                                <option value="0">Chọn đối tượng</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-4">
+                            <input type="number" name="" id="mon1" class="form-control" placeholder="Điểm môn thứ 1">
+                        </div>
+                        <div class="form-group col-4">
+                            <input type="number" name="" id="mon2" class="form-control" placeholder="Điểm môn thứ 2">
+                        </div>
+                        <div class="form-group col-4">
+                            <input type="number" name="" id="mon3" class="form-control" placeholder="Điểm môn thứ 3">
+                        </div>
+                    </div>
+                </div>
+                <hr noshade>
+                <button id="btnCalculate" class="btn btn-success">Kết quả</button>
+                <div id="footerXetTuyen" class="card-footer text-muted">
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="wrapper text-center">
+                <h1>Tính tiền điện</h1>
+                <div class="content">
+                    <div class="row">
+                        <div class="form-group col-6">
+                            <input type="text" id="ten1" class="form-control" placeholder="Nhập họ tên">
+                        </div>
+                        <div class="form-group col-6">
+                            <input type="number" id="kwh" class="form-control" placeholder="Nhập số kwh">
+                        </div>
+                    </div>
+                </div>
+                <hr noshade>
+                <button id="btnTienDien" class="btn btn-success">calculate</button>
+                <div id="footerHoaDon" class="card-footer text-muted">
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="wrapper text-center">
+                <h1>Tính tiền thuế thu nhập cá nhân</h1>
+                <div class="content">
+                    <div class="row">
+                        <div class="form-group col-4">
+                            <input type="text" id="ten2" class="form-control" placeholder="Nhập họ tên">
+                        </div>
+                        <div class="form-group col-4">
+                            <input type="number" id="income" class="form-control" placeholder="Tổng thu nhập năm">
+                        </div>
+                        <div class="form-group col-4">
+                            <input type="number" id="dependentPeople" class="form-control"
+                                placeholder="Số người phụ thuộc">
+                        </div>
+                    </div>
+                </div>
+                <hr noshade>
+                <button id="btnTax" class="btn btn-success">Tính tiền thuế</button>
+                <div id="footerTax" class="card-footer text-muted">
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="wrapper text-center cable">
+                <h1>Tính tiền cáp</h1>
+                <div class="content cable">
+                    <div class="row">
+                        <div class="form-group col-4">
+                            <select id="customer">
+                                <option value="0">Chọn loại khách hàng</option>
+                                <option value="1">Nhà Dân</option>
+                                <option value="2">Doanh nghiệp</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-4">
+                            <input type="text" id="customerCode" class="form-control"
+                                placeholder="Nhập mã khách hàng">
+                        </div>
+                        <div class="form-group col-4">
+                            <input type="number" id="kenhCaoCap" class="form-control" placeholder="Số kênh cao cấp">
+                        </div>
+                        <div class="form-group col-4" id="ketnoi" hidden>
+                            <input type="number" id="ketNoi" class="form-control" placeholder="Số kết nối">
+                        </div>
+                    </div>
+                </div>
+                <hr noshade>
+                <button id="btnCap" class="btn btn-success">Tính tiền cáp</button>
+                <div id="footerCap" class="card-footer text-muted"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="./main.js"></script>
+</body>
+
+</html>

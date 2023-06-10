@@ -1,0 +1,71 @@
+body{
+    overflow: hidden;
+    background: linear-gradient(90deg,black,#922B21);
+}
+.wrapper {
+    width: 500px;
+    background-color: #fff;
+    border-radius: 20px;
+    flex-direction: column;
+    border: 2px solid black;
+    padding-bottom: 20px;
+    overflow: hidden;
+    margin: 20px 5px ;
+}
+.wrapper h1 {
+    text-align: center;
+    color:#fff;
+    background: black;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 5px 10px;
+}
+.wrapper .content {
+    padding: 5px 30px 10px;
+}
+.wrapper button {
+    width: 150px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 15px;
+    padding: 12px 0;
+    border-radius: 30px;
+    background: #922B21;
+    margin-top:5px;
+    margin-left:25%;
+    margin-right: 25%;
+    margin-bottom: 10px;
+    transition: all 0.5s;
+}
+.wrapper input {
+    border-radius:5px;
+    padding: 2px 5px;
+    margin: 0px 2px 5px;
+}
+.wrapper button:hover {
+    transform: scale(.98);
+}
+.wrapper h2 {
+    font-size: 20px;
+}
+button:hover {
+    background: #922B21;
+    border-bottom-color: #111;
+}
+hr {
+    margin: 10px 0;
+}
+.cable {
+    width: 600px;
+}
+select{
+    appearance: none;
+    padding: 7px 7px;
+    border-radius: 5px;
+    border: rgba(0,0,0,0.2) 1px solid;
+}
+input, select {
+    box-shadow: 2px 2px 4px #D9E0EB inset; 
+}
